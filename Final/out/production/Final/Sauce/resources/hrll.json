@@ -1,0 +1,6 @@
+
+{
+  "urlname": "https://www.saucedemo.com/",
+  "driverpath" : "C:\\Users\\OCFC\\Desktop\\Selenium\\chromedriver_win32\\chromedriver.exe",
+  "chromedriver" : "webdriver.chrome.driver"
+}
