@@ -19,7 +19,8 @@ public class BaseClass {
     {
         JSONParser parser = new JSONParser();
         try {//give directory path
-            Object obj = parser.parse(new FileReader("C:\\Users\\OCFC\\Downloads\\E2EProject\\Final\\src\\Sauce\\resources\\hrll.json"));
+           // Object obj = parser.parse(new FileReader("C:\\Users\\OCFC\\Downloads\\E2EProject\\Final\\src\\Sauce\\resources\\hrll.json"));
+            Object obj = parser.parse(new FileReader(System.getProperty("user.dir")+"\\src\\Sauce\\resources\\hrll.json"));
             JSONObject jsonObject = (JSONObject)obj;
             String url = (String)jsonObject.get("urlname");
             String chromeDriver = (String)jsonObject.get("chromedriver");
