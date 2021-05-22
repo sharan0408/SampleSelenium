@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.FileReader;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
@@ -35,7 +37,11 @@ public class BaseClass {
             driver.get(url);
             //Maximizing the window
             driver.manage().window().maximize();
-
+            Set<String> s = driver.getWindowHandles();
+            Iterator<String> i = s.iterator();
+            String parent = i.next();
+            String main = i.next();
+            driver.switchTo().window(main);
         } catch(Exception e) {
             e.printStackTrace();
         }

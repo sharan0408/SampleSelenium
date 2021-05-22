@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<project name = "Final" default = "run" >
+
+    <target name = "run" depends = "compile">
+
+    </target>
+    <target name = "compile" >
+    <javac srcdir = "./src/" destdir = "Staging" >
+        <classpath>
+            <fileset dir = "C:\Users\OCFC\Desktop\Selenium\selenium-java-3.141.59\libs\" />
+        </classpath>
+    </javac>
+    </target>
+    <target name="jar" description="Compilation successful. Creating JAR executable">
+        <mkdir dir="build/jar/libs/"/>
+
+        <jar destfile="build/jar/build.jar" basedir="Staging\Sauce">
+            <zipgroupfileset dir="C:\Users\OCFC\Desktop\Selenium\selenium-java-3.141.59\libs\" />
+            <fileset dir="Staging/Sauce" >
+            </fileset>
+            <manifest>
+                <attribute name="DependencyFinder" value="main"/>
+                <attribute name="Main-Class" value="Sauce.MainClass"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
+
