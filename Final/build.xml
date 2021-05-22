@@ -21,7 +21,7 @@
             </fileset>
             <manifest>
                 <attribute name="DependencyFinder" value="main"/>
-                <attribute name="Main-Class" value="Sauce.MainClass"/>
+                <attribute name="Main-Class" value="Sauce.test.MainClass"/>
             </manifest>
         </jar>
     </target>

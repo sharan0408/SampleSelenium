@@ -1,4 +1,4 @@
-package Sauce;
+package Sauce.test;
 
 import Sauce.resources.BaseClass;
 import org.openqa.selenium.WebDriver;

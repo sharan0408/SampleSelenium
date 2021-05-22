@@ -1,4 +1,4 @@
-package Sauce;
+package Sauce.test;
 
 import Sauce.pageObject.ObjAddCart;
 import Sauce.resources.BaseClass;

@@ -1,4 +1,4 @@
-package Sauce;
+package Sauce.practice;
 
 public class pattern {
 
